@@ -4,15 +4,15 @@ import org.example.DIwS.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class MyController  {
-    
+public class MyController {
+
     private final GreetingService greetingService;
 
     public MyController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
-    public String sayHello(){
+    public String sayHello() {
         return greetingService.sayHello();
     }
 
