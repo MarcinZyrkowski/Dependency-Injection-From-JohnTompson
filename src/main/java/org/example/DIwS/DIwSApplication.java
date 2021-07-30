@@ -1,6 +1,7 @@
 package org.example.DIwS;
 
 import org.example.DIwS.config.ConfigBinding;
+import org.example.DIwS.config.ConstructorConfig;
 import org.example.DIwS.controllers.*;
 import org.example.DIwS.datasource.FakeDataSource;
 import org.springframework.boot.SpringApplication;
@@ -50,6 +51,11 @@ public class DIwSApplication {
         System.out.println(configBinding.getPassword());
         System.out.println(configBinding.getJdbcurl());
 
+        System.out.println("-------- Config constructor biding");
+        ConstructorConfig constructorConfig = ctx.getBean(ConstructorConfig.class);
+        System.out.println(constructorConfig.getUsername());
+        System.out.println(constructorConfig.getPassword());
+        System.out.println(constructorConfig.getJdbcurl());
 
     }
 
