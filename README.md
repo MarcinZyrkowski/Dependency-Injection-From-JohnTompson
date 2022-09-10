@@ -1,4 +1,4 @@
-# DependencyInjectionWithSpring
+# Dependency-Injection-From-JohnTompson
 
 
 This repository is created in process of learing about Spring from Udemy.
